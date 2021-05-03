@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Predict Insurance Bill</title>
+  <title>Predict Customer Risk - Andrey</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -14,7 +14,7 @@
 
 <body>
  <div class="login">
-	<h1>Predict Risk Customer - Andrey</h1>
+	<h1>Predict Risk Potential Applicants</h1>
      <!-- Form to enter new data for predictions  -->
     <form action="{{ url_for('predict')}}"method="POST">  
       <input onclick="personalinfo()" name="personalinfo_" type="button" class="btn btn-primary btn-block btn-large" value="Personal Information"></input>
@@ -396,7 +396,8 @@
   
    
  </div>
- {{pred}}
+ <b>{{pred}}
+</b>
  <script>
   function personalinfo() {
     var x = document.getElementById("personalinfodiv");
